@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/innks/NanumSquareRound/master/nanumsquareround.min.css">
+    <title>Yeohj's Web Page</title>
+</head>
+<body>
+    <div class="hello">
+        <form id="login-form" class="hidden">
+            <input required maxlength="15" type="text" placeholder="What is your name?" style="width:300px;height:30px;font-size:18px;" required/>
+            <button>Log In</button>
+            </br>
+        </form>
+        <p id="greeting" class="hidden"></p>
+        <h2 id="clock">00:00:00</h2>
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+        <div id="quote">
+            <span></span>
+            </br>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="painter-top">
+        <p id="text2">Painter</p>
+        <p id="text3">Draw your own paint! You can draw on other image, and also download your image!</p>
+    </div>
+    <div class="painter">
+        <div class="color-options">
+            <input type="color" id="color"/>
+            <div 
+                class="color-option"
+                style="background-color: #fc5c65;"
+                data-color="#fc5c65"
+            ></div>
+            <div 
+                class="color-option"
+                style="background-color: #fd9644;"
+                data-color="#fd9644"
+            ></div>
+            <div 
+                class="color-option"
+                style="background-color: #fed330;"
+                data-color="#fed330"
+            ></div>
+            <div 
+                class="color-option"
+                style="background-color: #26de81;"
+                data-color="#26de81"
+            ></div>
+            <div 
+                class="color-option"
+                style="background-color: #2bcbba;"
+                data-color="#2bcbba"
+            ></div>
+            <div 
+                class="color-option"
+                style="background-color: #45aaf2;"
+                data-color="#45aaf2"
+            ></div>
+            <div 
+                class="color-option"
+                style="background-color: #4b7bec;"
+                data-color="#4b7bec"
+            ></div>
+            <div 
+                class="color-option"
+                style="background-color: #a55eea;"
+                data-color="#a55eea"
+            ></div>
+            <div 
+                class="color-option"
+                style="background-color: #d1d8e0;"
+                data-color="#d1d8e0"
+            ></div>
+            <div 
+                class="color-option"
+                style="background-color: #778ca3;"
+                data-color="#778ca3"
+            ></div>
+            <div 
+                class="color-option"
+                style="background-color: #2f3542;"
+                data-color="#2f3542"
+            ></div>
+        </div>
+        <canvas></canvas>
+        <div class="btns">
+            <span>Pencil Width</span>
+            <input id="line-width" type="range" min="1" max="30" value="5" step="0.1"/>
+            <button id="mode-btn">🩸 Fill</button>
+            <button id="eraser-btn">❌ Erase</button>
+            <button id="destroy-btn">🗑 Destroy</button>
+            <label for="file">
+                📤 Add Image
+                <input type="file" accept="image/*" id="file"
+            /></label>
+            <input type="text" id="text" placeholder="Add text here"/>
+            <button id="save">📁 Save Image</button>
+        </div>
+    </div>
+
+    <div class="todo">
+        <p id="text4">To-do List</p>
+        <p id="text5">Make your own To-do List! All entries will be stored in local storage!</p>
+        <form id="todo-form">
+            <input type="text" placeholder="Write a To Do List and Press Enter" style="width:300px;height:30px;font-size:18px;" required/>
+        </form>
+        <ul id="todo-list"></ul>
+    </div>
+
+    <div class="links">
+        <p id="text1">Other Sites</p>
+        <a href="http://yeohj.com/board" target="_blank" class="link_text">User Board (게시판)</a></br></br>
+        <a href="http://yeohj.com/board/killer-kichang" target="_blank" class="link_text">Do Not Visit This Page</a></br>
+        <details class="link_text">
+            <summary>release of this site</summary>
+            <a href="http://yeohj.com/01/01" target="_blank">01</a>
+            <a href="http://yeohj.com/01/02" target="_blank">02</a>
+            <a href="http://yeohj.com/01/03" target="_blank">03</a>
+            <a href="http://yeohj.com/01/04" target="_blank">04</a>
+            <a href="http://yeohj.com/01/05" target="_blank">05</a>
+            <a href="http://yeohj.com/01/06" target="_blank">06</a>
+            <a href="http://yeohj.com/01/07" target="_blank">07</a>
+        </details>
+    </div>
+
+    <script src="js/greetings.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <!-- <script src="js/background.js"></script> -->
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/painter.js"></script>
+</body>
+</html>
