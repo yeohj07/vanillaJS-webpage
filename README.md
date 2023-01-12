@@ -1,5 +1,5 @@
 # vanillaJS-webpage
-clock + canvas (painter) + to-do list</br>
+clock + canvas (painter) + to-do list for testing local storage</br>
 </br>
 </br>
 ![hello1](https://user-images.githubusercontent.com/93759367/211954952-4e416b4e-55da-448d-b296-665aa31a31ca.png)
